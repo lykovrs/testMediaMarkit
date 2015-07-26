@@ -2,7 +2,15 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "main.js",
+  "dependencies": {
+    "jeet": "^6.1.2",
+    "nib": "^1.1.0",
+    "require.js": "^0.3.97",
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.0.5"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,22 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/lykovrs/testMediaMarkit.git"
   },
-  "author": "Lykov Roman",
+  "author": "Roman Lykov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lykovrs/testMediaMarkit/issues"
   },
-  "homepage": "https://github.com/lykovrs/testMediaMarkit#readme",
-  "devDependencies": {
-    "connect": "^3.4.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-csso": "^1.0.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-jade": "^1.0.1",
-    "gulp-livereload": "^3.8.0",
-    "gulp-myth": "^1.0.3",
-    "gulp-stylus": "^2.0.5",
-    "gulp-uglify": "^1.2.0"
-  }
+  "homepage": "https://github.com/lykovrs/testMediaMarkit#readme"
 }

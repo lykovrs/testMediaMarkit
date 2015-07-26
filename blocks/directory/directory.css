@@ -1,0 +1,21 @@
+.directory {
+  display: block;
+}
+.directory__item {
+  display: inline-block;
+  margin: 0 60px 30px 0;
+  vertical-align: top;
+  width: 260px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.directory__item:nth-child(3) {
+  margin-right: 0;
+}
+.directory__img-wrap {
+  padding-bottom: 10px;
+}
+.directory__discription {
+  font-size: 18px;
+  line-height: 20px;
+}
