@@ -18,49 +18,9 @@ html
 
 
             form(action='#')
-                fieldset
-                    label(for='speed') Select a speed
-                    select#speed(name='speed')
-                        option Slower
-                        option Slow
-                        option(selected='selected') Medium
-                        option Fast
-                        option Faster
-                    label(for='files') Select a file
-                    select#files(name='files')
-                        optgroup(label='Scripts')
-                            option(value='jquery') jQuery.js
-                            option(value='jqueryui') ui.jQuery.js
-                        optgroup(label='Other files')
-                            option(value='somefile') Some unknown file
-                            option(value='someotherfile') Some other file with a very long option text
-                    label(for='number') Select a number
-                    select#number(name='number')
-                        option 1
-                        option(selected='selected') 2
-                        option 3
-                        option 4
-                        option 5
-                        option 6
-                        option 7
-                        option 8
-                        option 9
-                        option 10
-                        option 11
-                        option 12
-                        option 13
-                        option 14
-                        option 15
-                        option 16
-                        option 17
-                        option 18
-                        option 19
-
-                    include blocks/select/select.jade
-                    p
-
-                        include blocks/c-radio-check/c-radio-check
-                        include blocks/button/button.jade
+                include blocks/select/select.jade
+                include blocks/c-radio-check/c-radio-check
+                include blocks/button/button.jade
 
 
 
