@@ -6,6 +6,8 @@ html
         //link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
         script(src='//code.jquery.com/jquery-1.10.2.js')
         //script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
+        script(type="text/javascript", src="blocks/menu/menu.js")
+        script(type="text/javascript", src="blocks/slider/slider.js")
         script(type="text/javascript", src="main.js")
         //<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     body
@@ -22,6 +24,8 @@ html
                 include blocks/c-radio-check/c-radio-check
                 include blocks/button/button.jade
 
+            h2.contant__header Слайдер
+            include blocks/slider/slider.jade
 
 
 

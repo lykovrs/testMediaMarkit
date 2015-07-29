@@ -1,0 +1,131 @@
+.slider
+  width 900px
+  height 300px
+  overflow hidden
+
+  &__module
+    height 300px !important
+    width 620px
+    background #ccc
+    float left
+
+  &__nav
+    position absolute
+    bottom 25px
+    right 55px
+
+    &-items
+      margin 0 auto
+      text-align center
+      &:after
+        content ""
+        clear both
+        display block
+
+    &-item
+      overflow hidden
+      position relative
+      display inline
+      display inline-block
+      cursor pointer
+      margin 0 5px
+      width 8px
+      height 8px
+      background #e5e5e5
+      text-indent -10000px
+      border-radius 10px
+      border 1px solid #e5e5e5
+
+    &-item.current
+      background #000
+
+    .arrow_navigation
+      width 100%
+      margin 0 auto
+      height 100%
+      position relative
+      z-index auto
+      & > div
+        position relative
+        z-index 20
+        cursor pointer
+        top 38%
+        left auto
+        float left
+        &.right
+          float right
+
+  &__items
+    width 100%
+    position absolute
+    top 0
+    left 0
+    height 100%
+  &__item
+    float left
+    width 100%
+    height inherit
+    text-align center
+
+  &__module,
+  &__module .arrow_navigation
+    overflow hidden
+    position relative
+    width 620px
+
+  &__info
+    width 280px
+    float left
+    background #e5e5e5
+    height 300px
+    font-size 18px
+    padding-top 30px
+
+    &-items
+      margin 0
+      padding 0
+      position relative
+
+    &-item
+      list-style none
+      padding-bottom 25px
+      position relative
+
+      &.current
+        &:before,
+        &:after
+          display block
+          content ""
+          position absolute
+          left -20px
+          width 0
+          height 0
+          border 10px solid transparent
+
+        &:before
+          border-top 20px solid #e5e5e5
+          border-right 10px solid #e5e5e5
+        &:after
+          border-right 10px solid #e5e5e5
+          border-bottom 20px solid #e5e5e5
+          top 10px
+
+        & > div:before,
+        & > div:after
+          position absolute
+          left -20px
+          display block
+          content ""
+          width 20px
+          height 300px
+          background #e5e5e5
+
+        & > div:before
+          top 40px
+        & > div:after
+          top -300px
+
+      &:last-child
+        margin-bottom 0
+        height 100%
+
